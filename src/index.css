@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  height: 100vh;
-  background-color: gray;
+  @apply font-sans;
 }

@@ -5,7 +5,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div>
+      <div className="">
         <div>
           <span>🚀</span>
           <span>AstroWind</span>

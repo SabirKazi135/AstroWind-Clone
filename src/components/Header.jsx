@@ -1,3 +1,5 @@
+import { Menu } from "lucide-react";
+
 function Header() {
   return (
     <>
@@ -6,6 +8,10 @@ function Header() {
           <span>🚀</span>
           <span>AstroWind</span>
         </div>
+
+        <button>
+          <Menu size={37}/>
+        </button>
       </div>
     </>
   );

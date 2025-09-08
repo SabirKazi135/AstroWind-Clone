@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 function Header() {
-
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
@@ -12,8 +11,8 @@ function Header() {
           <span>AstroWind</span>
         </div>
 
-        <button onClick={}>
-          <Menu size={37}/>
+        <button onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <X size={36} /> : <Menu size={36} />}
         </button>
       </div>
     </>

@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { Menu } from "lucide-react";
 
 function Header() {
+
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <div>
@@ -9,7 +12,7 @@ function Header() {
           <span>AstroWind</span>
         </div>
 
-        <button>
+        <button onClick={}>
           <Menu size={37}/>
         </button>
       </div>

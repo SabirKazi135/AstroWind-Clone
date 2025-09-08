@@ -5,15 +5,27 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className="">
-        <div>
-          <span>🚀</span>
-          <span>AstroWind</span>
-        </div>
+      <div>
+        <div className=" flex m-4 justify-between ">
+          <div className="text-2xl font-bold">
+            <span>🚀 AstroWind</span>
+          </div>
 
-        <button onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X size={36} /> : <Menu size={36} />}
-        </button>
+          <button onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X size={36} /> : <Menu size={36} />}
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <button>Home</button>
+              <a href="#">SaaS</a>
+              <a href="#">Startup</a>
+              <a href="#">Mobile App</a>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </>
   );
